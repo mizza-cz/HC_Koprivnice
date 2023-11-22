@@ -476,3 +476,14 @@
     }
   }
 }
+.navbar-nav__logo:hover .header__logo:nth-child(2) {
+  display: block;
+  opacity: 1;
+  top: 12px;
+  visibility: visible;
+}
+.navbar-nav__logo:hover .header__logo:first-child {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}

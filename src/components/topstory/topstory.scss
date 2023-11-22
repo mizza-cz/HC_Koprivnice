@@ -13,24 +13,12 @@
       margin-top: 0;
     }
   }
-
+}
+ 
+.topstory__main {
   .h1 {
     padding: 24px 40px 0 40px;
   }
-  .h1,
-  .h3 {
-    transition: all 0.3s;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    @include media-breakpoint-down(xl) {
-      font-size: 26px;
-      line-height: 110%;
-      padding: 20px 16px;
-    }
-  }
-}
-
-.topstory__main {
   .post__img {
     aspect-ratio: 920/520;
   }

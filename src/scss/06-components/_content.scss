@@ -1,4 +1,4 @@
-.content {
+.o-content {
   &::after {
     display: table;
     clear: both;
@@ -10,8 +10,95 @@
   > :last-child {
     margin-bottom: 0;
   }
-}
+  ul {
+    margin-top: 12px;
+    margin-bottom: 24px !important;
+    li {
+      position: relative;
+      padding-left: 24px;
+      display: block;
+      font-size: 14px;
+      line-height: 1.57;
+      margin-bottom: 10px;
+      a {
+        text-decoration-color: transparent;
+        transition: all 0.3s;
 
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        background-color: var(--color-blue);
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        top: 6px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  ol {
+    counter-reset: item;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    > li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 16px;
+      &::before {
+        content: counter(item) ")";
+        color: var(--color-blue);
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      > ol {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            content: counter(item) ".";
+          }
+        }
+      }
+    }
+  }
+  h1,
+  h3,
+  h2,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  img {
+    margin: 24px auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  p {
+    img {
+      margin: 0;
+    }
+  }
+}
+.perex {
+  margin-bottom: 16px;
+  color: var(--color-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
 .o-content h1,
 .h1 {
   color: var(--color-blue);
@@ -22,14 +109,21 @@
     line-height: normal;
   }
 }
-
+.o-content h2,
+.h2 {
+  font-size: 32px;
+  line-height: normal;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+  }
+}
 .o-content h3,
 .h3 {
   color: var(--color-blue);
   font-size: 24px;
   line-height: 28px;
   @include media-breakpoint-down(lg) {
-    font-size: 22px;
+    font-size: 20px;
     line-height: normal;
   }
 }
@@ -39,11 +133,25 @@
   color: var(--color-blue);
   font-size: 20px;
   line-height: 23px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: normal;
+  }
 }
-
+.o-content h5,
+.h5 {
+  font-size: 16px;
+  line-height: normal;
+}
 .o-content h6,
 .h6 {
   color: var(--color-blue);
   font-size: 14px;
   line-height: 16px;
+}
+
+.decore-b {
+  border-bottom: 2px solid var(--color-blue);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }

@@ -1,4 +1,5 @@
 .topstory {
+  padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--color-light-gray);
   @include media-breakpoint-down(md) {
@@ -14,7 +15,7 @@
     }
   }
 }
- 
+
 .topstory__main {
   .h1 {
     padding: 24px 40px 0 40px;

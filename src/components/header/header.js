@@ -16,13 +16,29 @@ function headerNavOpenerClick() {
   });
 }
 
-// var e,
-//   t = window.location.hash;
-// "" != t &&
-//   (e = $("a[name='" + t + "']")).length &&
-//   $("html,body").animate({ scrollTop: e.offset().top }, "slow"),
-//   $(window).bind("scroll", function () {
-//     32 < $(window).scrollTop()
-//       ? $(".header").addClass("fixed")
-//       : $(".header").removeClass("fixed");
-//   });
+$(document).ready(function () {
+  var hash = window.location.hash;
+
+  if (hash !== "") {
+    var element = $('a[name="' + hash.substring(1) + '"]');
+    if (element.length) {
+      $("html, body").animate(
+        {
+          scrollTop: element.offset().top,
+        },
+        "slow"
+      );
+    }
+  }
+
+  $(window).scroll(function () {
+    var scrollPosition = $(window).scrollTop();
+    var header = $(".header");
+
+    if (scrollPosition > 180) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
+  });
+});

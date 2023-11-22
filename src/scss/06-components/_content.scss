@@ -155,3 +155,10 @@
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
+
+.main {
+  padding-top: 68px;
+  @include media-breakpoint-down(xxl) {
+    padding-top: 54px;
+  }
+}

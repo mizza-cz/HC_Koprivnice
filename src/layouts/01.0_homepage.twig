@@ -1,0 +1,32 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/topstory/topstory.twig" %} {% include
+"@components/hp-matches/hp-matches.twig" %}
+<div class="pubs">
+  <div class="container">
+    <div class="row g-xl-10">
+      <div class="col-md-6">
+        <a href="#" target="_blank" class="pubs__item">
+          <img
+            src="https://placehold.co/680x160/002855/white"
+            loading="lazy"
+            alt="pub"
+          />
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" target="_blank" class="pubs__item">
+          <img
+            src="https://placehold.co/680x160/002855/white"
+            loading="lazy"
+            alt="pub"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "@components/infoBoard-section/infoBoard-section.twig" %}
+{% include "@components/partners/partners.twig" %}
+{% endblock
+%}

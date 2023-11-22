@@ -1,0 +1,30 @@
+.link {
+  display: block;
+  background-color: var(--color-blue);
+  border-radius: 69px;
+  padding: 16px 58px 16px 32px;
+  font-family: "rajdhani", sans-serif !important;
+  color: var(--color-light);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: fit-content;
+  position: relative;
+  transition: all 0.3s;
+  &:hover {
+    color: VAR(--color-yellow);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    background-image: url("../images/ico/right-y.svg");
+    width: 11px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

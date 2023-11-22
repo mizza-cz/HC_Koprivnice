@@ -1,0 +1,64 @@
+.matchItem {
+  padding: 32px;
+  background: rgba(#000, 0.1);
+  &__teams {
+    color: var(--color-light);
+    text-transform: uppercase;
+    @include media-breakpoint-down(md) {
+      order: 2;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+  }
+  .h4 {
+    color: var(--color-light);
+  }
+  &__date {
+    color: var(--color-light);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__logo {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__info {
+    font-family: "rajdhani", sans-serif !important;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+    color: var(--color-light);
+  }
+}
+.win {
+  color: var(--color-green) !important;
+}
+.lose {
+  color: red !important;
+}

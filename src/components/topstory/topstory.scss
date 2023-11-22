@@ -1,0 +1,49 @@
+.topstory {
+  padding-bottom: 40px;
+  background-color: var(--color-light-gray);
+  @include media-breakpoint-down(md) {
+    padding: 24px 0;
+  }
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 0;
+  }
+  .post + .post {
+    margin-top: 32px;
+    @include media-breakpoint-down(xl) {
+      margin-top: 0;
+    }
+  }
+
+  .h1 {
+    padding: 24px 40px 0 40px;
+  }
+  .h1,
+  .h3 {
+    transition: all 0.3s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    @include media-breakpoint-down(xl) {
+      font-size: 26px;
+      line-height: 110%;
+      padding: 20px 16px;
+    }
+  }
+}
+
+.topstory__main {
+  .post__img {
+    aspect-ratio: 920/520;
+  }
+  .tag {
+    left: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 24px;
+    @include media-breakpoint-down(xl) {
+      font-size: 12px;
+      line-height: 12px;
+      padding: 10px 24px;
+      left: 24px;
+    }
+  }
+}

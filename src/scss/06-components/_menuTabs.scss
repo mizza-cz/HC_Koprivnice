@@ -1,0 +1,36 @@
+.menuTabs {
+  .menuTab {
+    color: var(--color-blue);
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 4px solid var(--color-blue);
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    cursor: pointer;
+    font-family: "rajdhani", sans-serif !important;
+    font-weight: 700;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .menuTab.active {
+    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  display: flex;
+  gap: 8px;
+}
+
+.menuTab__content {
+  display: none;
+}
+.menuTab__content.tab-active {
+  display: block;
+}

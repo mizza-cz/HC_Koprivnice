@@ -1,0 +1,40 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 1526px !important;
+  padding: 0 16px !important;
+  margin: 0 auto;
+}
+.g-xl-10 {
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 2.5rem;
+  }
+}
+
+.g-10 {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 2.5rem;
+}
+.text-yellow {
+  color: var(--color-yellow) !important;
+}
+.g-6 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+.gx-xl-10 {
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 2.5rem;
+  }
+}
+.gy-6 {
+  --bs-gutter-y: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+/*! purgecss end ignore */

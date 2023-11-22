@@ -1,0 +1,38 @@
+<section class="hp-matches">
+  <div class="container">
+    <ul class="hp-matches__menu menuTabs">
+      <li>
+        <div class="menuTab active" data-id="tab1">A-tým</div>
+      </li>
+      <li>
+        <div class="menuTab" data-id="tab2">Mládež</div>
+      </li>
+    </ul>
+    <div class="menuTab__content tab-active" id="tab1">
+      <div class="row g-xl-10 g-6">
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem.twig" %}
+        </div>
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem-time.twig" %}
+        </div>
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem-lose.twig" %}
+        </div>
+      </div>
+    </div>
+    <div class="menuTab__content" id="tab2">
+      <div class="row g-xl-10 g-6">
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem-time.twig" %}
+        </div>
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem-time.twig" %}
+        </div>
+        <div class="col-xl-4">
+          {% include "@components/matchItem/matchItem-lose.twig" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

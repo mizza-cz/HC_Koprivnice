@@ -1,0 +1,49 @@
+.content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-content h1,
+.h1 {
+  color: var(--color-blue);
+  font-size: 40px;
+  line-height: 50px;
+  @include media-breakpoint-down(lg) {
+    font-size: 34px;
+    line-height: normal;
+  }
+}
+
+.o-content h3,
+.h3 {
+  color: var(--color-blue);
+  font-size: 24px;
+  line-height: 28px;
+  @include media-breakpoint-down(lg) {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+
+.o-content h4,
+.h4 {
+  color: var(--color-blue);
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.o-content h6,
+.h6 {
+  color: var(--color-blue);
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -13,3 +13,22 @@
     }
   }
 }
+
+.hp-matches__submenu {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  .menuTab {
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    opacity: 0.7;
+  }
+  .menuTab.active {
+    opacity: 1;
+  }
+}

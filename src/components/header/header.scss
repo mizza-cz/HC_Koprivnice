@@ -392,7 +392,7 @@
   justify-content: center;
   background-color: var(--color-yellow);
   @include media-breakpoint-down(xxl) {
-    display: none;
+    display: none !important;
   }
   .header__logo {
     display: block;
@@ -407,6 +407,7 @@
   z-index: 999;
   @include media-breakpoint-down(xxl) {
     width: 80px;
+    height: 80px;
     left: 0;
     right: 0;
     margin: 0 auto;

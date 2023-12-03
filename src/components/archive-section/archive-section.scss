@@ -1,0 +1,18 @@
+.archive-section {
+  padding-bottom: 48px;
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 0;
+  }
+  .h1 {
+    padding-left: 40px;
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+  }
+  .post {
+    .h3 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

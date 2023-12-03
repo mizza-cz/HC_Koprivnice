@@ -1,0 +1,63 @@
+{% extends "@components/base/base.twig" %} {% set title = "06.0_archive" %} {%
+block main %}
+
+<section class="archive-section pt-10 bg-gray">
+  <div class="container">
+    <div class="row g-10">
+      <div class="col-xl-8">
+        <h1 class="h1 mb-6">Fotogalerie</h1>
+        <div class="headerSection">
+          <select class="js-select">
+            <option value="">A-tým</option>
+            <option value="">Mládež</option>
+            <option value="">U20</option>
+            <option value="">U18</option>
+            <option value="">U16</option>
+          </select>
+
+          <form class="headerSection__form" action="">
+            <input
+              class="headerSection__input"
+              type="text"
+              placeholder="Zadejte hledaný text"
+            />
+            <button class="link">Hledat</button>
+          </form>
+        </div>
+
+        <div class="row gx-xl-10 gy-6">
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+          <div class="col-lg-4">
+            {% include "@components/post/post-2.twig" %}
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4">{% include "@components/aside/aside.twig" %}</div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/partners/partners.twig" %} {% endblock %}

@@ -1,4 +1,10 @@
 .fanshopItem {
+  margin-bottom: 20px;
+  @include media-breakpoint-down(md) {
+    border-bottom: 1px solid var(--color-blue);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
   .select2-container .select2-selection--single {
     padding-right: 60px;
     padding-left: 28px;

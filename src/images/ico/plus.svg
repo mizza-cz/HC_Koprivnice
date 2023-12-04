@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="1.-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fanshop" transform="translate(-1078, -939)">
+            <g id="Top-story" transform="translate(260, 112)">
+                <g id="Group-3" transform="translate(640, 525)">
+                    <g id="Kusy" transform="translate(162, 290)">
+                        <g id="Group" transform="translate(16, 12)">
+                            <circle id="Oval" fill="#002855" cx="12" cy="12" r="12"></circle>
+                            <g id="+" transform="translate(7.716, 8.236)" fill="#FFFFFF" fill-rule="nonzero">
+                                <polygon id="Path" points="3.204 5.328 0 5.328 0 3.24 3.204 3.24 3.204 0 5.346 0 5.346 3.24 8.55 3.24 8.55 5.328 5.346 5.328 5.346 8.568 3.204 8.568"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -10,6 +10,16 @@
   > :last-child {
     margin-bottom: 0;
   }
+  .table-responsive + .table-responsive {
+    margin-top: 32px !important;
+  }
+  td:nth-child(2) a {
+    color: var(--color-blue);
+    font-weight: 500;
+  }
+  .text-right {
+    text-align: right;
+  }
   ul {
     margin-top: 12px;
     margin-bottom: 24px !important;

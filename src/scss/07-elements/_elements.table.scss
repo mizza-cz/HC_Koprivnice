@@ -1,0 +1,18 @@
+.table > :not(:first-child) {
+  border: none;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  a {
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+}
+.table > :not(:first-child) {
+  border: none;
+}

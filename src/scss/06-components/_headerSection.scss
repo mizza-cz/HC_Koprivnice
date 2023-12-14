@@ -41,4 +41,23 @@
       margin-left: auto;
     }
   }
+  &__filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--color-light);
+    width: 100%;
+    background-color: var(--color-blue);
+    padding: 20px 0;
+    .active {
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--color-yellow);
+    }
+    a {
+      padding: 0 8px;
+    }
+    li {
+    }
+  }
 }

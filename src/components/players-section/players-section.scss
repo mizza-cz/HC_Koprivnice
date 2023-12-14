@@ -1,0 +1,49 @@
+.players-section {
+  .table-responsive {
+    margin-bottom: 32px;
+  }
+  &__wrapper {
+    tr:first-child {
+      background-color: var(--color-blue);
+    }
+    th {
+      background-color: var(--color-blue);
+      color: var(--color-light);
+    }
+    th,
+    td {
+      min-width: 50px;
+      text-align: left;
+      white-space: nowrap;
+      a {
+        text-align: left;
+      }
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: center !important;
+      width: 50px;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      a {
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+  .jmeno_long {
+    display: block;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  .jmeno_short {
+    display: none;
+    @include media-breakpoint-down(lg) {
+      display: block;
+    }
+  }
+}

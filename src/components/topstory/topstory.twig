@@ -1,7 +1,7 @@
 <section class="topstory">
   <div class="container">
-    <div class="row g-xl-10">
-      <div class="col-xl-8">
+    <div class="row g-xl-10 g-4">
+      <div class="col-12">
         <a href="#" class="topstory__main post">
           <div class="post__img">
             <img src="images/content/post.jpeg" loading="lazy" alt="post" />
@@ -12,10 +12,8 @@
           </h1>
         </a>
       </div>
-      <div class="col-xl-4">
-        {% include "@components/post/post.twig" %} {% include
-        "@components/post/post.twig" %}
-      </div>
+      <div class="col-lg-6">{% include "@components/post/post.twig" %}</div>
+      <div class="col-lg-6">{% include "@components/post/post.twig" %}</div>
     </div>
   </div>
 </section>

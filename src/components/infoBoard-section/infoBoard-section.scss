@@ -3,12 +3,6 @@
   @include media-breakpoint-down(xl) {
     margin-bottom: 24px;
   }
-  .infoBoard-box + .infoBoard-box {
-    margin-top: 40px;
-    @include media-breakpoint-down(xl) {
-      margin-top: 24px;
-    }
-  }
 }
 .infoBoard-posts {
   &__header {
@@ -25,7 +19,7 @@
 
 .infoBoard-box {
   background-color: var(--color-light-gray);
-  padding: 32px 24px;
+  padding: 24px 24px;
   .h3 {
     margin-bottom: 24px;
   }

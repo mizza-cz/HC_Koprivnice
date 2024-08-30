@@ -1,20 +1,49 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
+  <div class="footer__wrapper">
+    <div class="footer-logos">
+      <a href="#" class="footer__logo-2">
+        <img src="images/content/logo-2.png" loading="lazy" alt="logo" />
+      </a>
       <a href="#" class="footer__logo">
         <img src="images/ico/logo.svg" loading="lazy" alt="logo" />
       </a>
-      <div class="copyright">© 2023 HC Kopřivnice & eSports.cz, s.r.o.</div>
-      <div class="footer__right">
-        <a class="footer__link" href="#"> Nastavení cookies </a>
-        <ul class="footer__social">
-          <li>
-            <a href="#" target="_blank"> {% include "@images/fb.svg" %} </a>
-          </li>
-          <li>
-            <a href="#" target="_blank"> {% include "@images/insta.svg" %} </a>
-          </li>
-        </ul>
+    </div>
+    <div class="container">
+      <ul class="footer__menu">
+        <li>
+          <a href="#">Klub</a>
+        </li>
+        <li>
+          <a href="#">A-tým</a>
+        </li>
+        <li>
+          <a href="#">Mládež</a>
+        </li>
+        <li>
+          <a href="#">Partneři</a>
+        </li>
+        <li>
+          <a href="#">Multimedia</a>
+        </li>
+      </ul>
+      <div class="footer__inner">
+        <div class="copyright">
+          © 2023 HC Kopřivnice &
+          <a href="#" target="_blank">eSports.cz, s.r.o.</a>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="#"> Nastavení cookies </a>
+          <ul class="footer__social">
+            <li>
+              <a href="#" target="_blank"> {% include "@images/fb.svg" %} </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                {% include "@images/insta.svg" %}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
